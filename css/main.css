@@ -1,0 +1,309 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* The progress container (grey background) */
+.progress-container {
+  position: fixed;
+  display: none;
+  z-index: 1;
+  width: 100%;
+  height: 8px;
+  background: #373B44;
+}
+
+/* The progress bar (scroll indicator) */
+.progress-bar {
+  height: 8px;
+  background: #73AECB;
+  background: -webkit-linear-gradient(right, #73AECB, #B533EE);
+  background: -moz-linear-gradient(right, #73AECB, #B533EE);
+  background: linear-gradient(to left, #73AECB, #B533EE);
+  width: 0%;
+
+
+}
+
+#logo {
+  display: block;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+body {
+  margin: 0;
+}
+
+#navbar {
+  position: sticky;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #373B44;
+}
+
+#navbar li {
+  float: right;
+}
+
+#navbar li a {
+  color: rgb(255, 255, 255);
+  display: block;
+  text-align: center;
+  padding: 15px 20px;
+  text-decoration: none;
+  margin: 0;
+  font-size: 1.5vmax;
+  font-weight: 100;
+}
+
+li a:hover {
+  transition-duration: 200ms;
+  background-color: rgb(0, 71, 119);
+  color: rgb(255, 255, 255);
+}
+
+#navbar .active {
+  transition-duration: 200ms;
+  background-color: rgb(255, 248, 148);
+  color: #373B44;
+  font-weight: 400;
+}
+
+b {
+  transition-duration: 200ms;
+  font-weight: 800;
+  color: rgb(0, 182, 121);
+}
+
+b:hover {
+  transition-duration: 200ms;
+  font-size: 150%;
+  font-weight: 800;
+}
+
+section {
+  width: 100%;
+  padding: 0 7%;
+  display: table;
+  margin: 0;
+  max-width: none;
+  background-color: #373B44;
+  height: 100vh;
+  color: white;
+}
+
+section:nth-of-type(2n) {
+  background-color: rgb(255, 248, 148);
+  color: rgb(73, 73, 73);
+}
+
+.intro {
+  height: 90vh;
+  text-align: center;
+
+  background: linear-gradient(157deg, #a79b41, #3776bb);
+  background-size: 400% 400%;
+
+  -webkit-animation: background-color 6s ease infinite;
+  -moz-animation: background-color 6s ease infinite;
+  -o-animation: background-color 6s ease infinite;
+  animation: background-color 6s ease infinite;
+
+}
+
+@-webkit-keyframes background-color {
+  0% {
+    background-position: 0% 50%
+  }
+
+  50% {
+    background-position: 100% 50%
+  }
+
+  100% {
+    background-position: 0% 50%
+  }
+}
+
+@-moz-keyframes background-color {
+  0% {
+    background-position: 0% 50%
+  }
+
+  50% {
+    background-position: 100% 50%
+  }
+
+  100% {
+    background-position: 0% 50%
+  }
+}
+
+@-o-keyframes background-color {
+  0% {
+    background-position: 0% 50%
+  }
+
+  50% {
+    background-position: 100% 50%
+  }
+
+  100% {
+    background-position: 0% 50%
+  }
+}
+
+@keyframes background-color {
+  0% {
+    background-position: 0% 50%
+  }
+
+  50% {
+    background-position: 100% 50%
+  }
+
+  100% {
+    background-position: 0% 50%
+  }
+}
+
+.content {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+#resume,
+#project,
+#info {
+  display: table-cell;
+  vertical-align: super;
+}
+
+#projectBoxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#documentBoxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#projectBoxes div {
+  height: 420px;
+  width: 500px;
+  padding: 20px;
+  margin: 1%;
+  text-align: center;
+}
+
+#documentBoxes div {
+  height: 600px;
+  width: 600px;
+  padding: 20px;
+  margin: 1%;
+  text-align: center;
+}
+
+#projectBoxes div img {
+  max-height: 300px;
+  max-width: 480px;
+}
+
+#documentBoxes div img {
+  max-height: 500px;
+  max-width: 600px;
+}
+
+.showcase>a {
+  color: #373b44;
+}
+
+.fa {
+  padding: 30px;
+  margin: 20px;
+  font-size: 50px;
+  text-align: center;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+.fa:hover {
+  transition-duration: 500ms;
+}
+
+.fa-instagram:hover {
+  color: #125688;
+}
+
+.fa-github:hover {
+  color: rgb(41, 41, 41);
+}
+
+.fa-dribbble:hover {
+  color: #ea4c89;
+}
+
+.fa-linkedin:hover {
+  color: #007bb5;
+}
+
+.fa-twitter:hover {
+  color: #55ACEE;
+}
+
+#info h2{
+  font-size: 2rem;
+}
+
+#info li{
+  font-size: 1.2rem;
+  line-height: 150%;
+}
+
+h1 {
+  font-size: 3em;
+  display: block;
+  text-align: center;
+}
+
+p {
+  font-size: 1.5em;
+  font-weight: 500;
+  color: #C3CAD9;
+}
+
+a {
+  font-weight: 700;
+  color: #373B44;
+  position: relative;
+}
+
+
+a:hover {
+  opacity: 0.8;
+}
+
+a:active {
+  top: 1px;
+}
+
+footer {
+  padding: 1% 5%;
+  text-align: center;
+  background-color: #373B44;
+  color: white;
+}
+
+footer>a {
+  color: #FE4B74;
+  font-weight: 500;
+  text-decoration: none;
+}

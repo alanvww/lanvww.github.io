@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<title>Game of Life by Junhao Ren</title>
+	<link rel="icon" type="image/png" href="src/favicon/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="src/favicon/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="src/favicon/favicon-48x48.png" sizes="48x48">
+	<link rel="stylesheet" type="text/css" href="css/gameoflife-css/main.css">
+	<link href="https://fonts.googleapis.com/css?family=Bungee+Shade&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+
+	<script src="js/gameoflife-js/LifeWorld.js"></script>
+	<script src="js/gameoflife-js/renLIB.js"></script>
+	<script src="js/gameoflife-js/index.js"></script>
+
+</head>
+
+<body>
+	<h1>Game of Life</h1>
+	<canvas></canvas>
+	<section>
+		<button id="replayButton">Replay</button>
+		<button id="randomButton">Random All!</button>
+		<hr>
+		<span>Shape:</span>
+		<input type="radio" class="radioButton" id="rect" name="shape" value="rect" checked>
+		<label for="rect">Rectangle</label>
+		<input type="radio" class="radioButton" id="circle" name="shape" value="circle">
+		<label for="circle">Circle</label>
+		<input type="radio" class="radioButton" id="half-circle" name="shape" value="half-circle">
+		<label for="half-circle">Half Circle</label>
+		<hr>
+		<label>FPS:<input type="range" min="1" max="144" value="12" class="slider" id="fpsRange"></label>
+		<span id="fpsValue"></span>
+		<hr>
+		<label>Cell Size:<input type="range" min="5" max="30" value="10" class="slider" id="cellSizeRange"></label>
+		<span id="cellSizeValue"></span>
+		<hr>
+		<label>strokeStyle:
+			<select id="colorChooser">
+				<option value="red" selected>red</option>
+				<option value="green">green</option>
+				<option value="blue">blue</option>
+				<option value="Rainbow gradient">Rainbow gradient</option>
+				<option value="Blue purple gradient">Blue purple gradient</option>
+				<option value="Yellow green gradient">Yellow green gradient</option>
+				<option value="radGradient">radial gradient</option>
+			</select>
+		</label>
+		<hr>
+
+		<h2>Project description</h2>
+		<p>This project is based on Conway's Game of Life. Besides the original display experience, I added six
+			different controls and allow to user to have more varied experience with the shape, color, fps speed, cell
+			size, and mouse click. If the user chooses a color mode or random, the game and all the elements on the page
+			will change to match the color.
+		</p>
+		<hr>
+
+		<h2>Control instruction</h2>
+		<ul>
+			<li>Click button to replay or random all the values</li>
+			<li>Change shape by the radio buttons</li>
+			<li>Change FPS by the slider</li>
+			<li>Change Cell Size by the slider</li>
+			<li>Choose color from the select list</li>
+			<li>Mouse click on the Canvas to generate specific size world</li>
+		</ul>
+		<hr>
+	</section>
+	
+	<footer>
+		Game of Life by Junhao Ren
+	</footer>
+</body>
+
+</html>

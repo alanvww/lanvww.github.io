@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image/png" href="src/favicon/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="src/favicon/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="src/favicon/favicon-48x48.png" sizes="48x48">
+    <title>Currents News</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/currents-css/main.css">
+    <script src="js/currents-js/main.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Currents Reader</h1>
+    </header>
+
+    <ul id="navibar">
+        <li><a class="btn active" id="lastest" href="currents.html">Lastest News</a></li>
+        <li><a class="btn" id="searchTab" href="#">Search</a></li>
+        <li><a class="btn" href="index.html">About Me</a></li>
+
+        <li id="languageButton"><a class="active" id="language" href="#">English</a></li>
+    </ul>
+
+
+    <div class="widgets">
+        <span id="hints">News Categories</span>
+        <select id="category">
+            <option value='none' selected>None</option>
+        </select>
+        <button type="button" id="loadCategory">Go</button>
+    </div>
+
+
+    <div id="content">
+
+    </div>
+    <footer>
+        <span>Junhao Ren &copy;2019</span>
+    </footer>
+
+</body>
+
+
+</html>

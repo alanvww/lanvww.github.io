@@ -1,0 +1,141 @@
+* {
+    font-family: 'PT Serif', serif;
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    height: 20vh;
+}
+
+header h1 {
+    margin: 0;
+    color: #333;
+    text-align: center;
+    font-size: 5em;
+    padding-top: 3.5vh;
+}
+
+#navibar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+#navibar li {
+    float: left;
+}
+
+#navibar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#navibar li a:hover:not(.active) {
+    background-color: #111;
+}
+
+#navibar .active {
+    background-color: rgb(58, 51, 156);
+}
+
+#navibar #languageButton {
+    float: right;
+}
+
+.widgets {
+    padding: 10px;
+    background-color: rgb(235, 235, 235);
+}
+
+#status {
+    text-align: center;
+    vertical-align: middle;
+}
+
+#content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#content div {
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    height: 150px;
+    width: 400px;
+    padding: 20px;
+    margin: 1%;
+    text-align: center;
+}
+
+.result {
+    position: relative;
+    text-align: left;
+}
+
+footer {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 32px 16px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(58, 51, 156);
+    margin: 0;
+}
+
+@media screen and (max-width:480px) {
+    header {
+        height: auto;
+    }
+
+    header h1 {
+        font-size: 2.5em;
+        padding-top: 3.5vh;
+        padding-bottom: 3.5vh;
+    }
+
+
+    #navibar li {
+        float: none;
+    }
+
+    #navibar #languageButton {
+        float: none;
+    }
+
+    #content {
+        grid-gap: 0;
+        grid-template-columns: auto;
+    }
+
+
+    footer span {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+}
+
+@media screen and (min-width:1300px) {
+    img {
+        position: center;
+        display: inline;
+    }
+
+
+
+}

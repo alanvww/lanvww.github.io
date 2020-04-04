@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="src/favicon/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="src/favicon/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="src/favicon/favicon-48x48.png" sizes="48x48">
+    <title>Sudoku!</title>
+    <link rel="stylesheet" href="css/sudoku!-css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lilita+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" id="closebtn">&times;</a>
+        <a href="sudoku!.html">Game On!</a>
+        <a href="sudoku!-document.html">Document</a>
+        <a href="index.html">About me</a>
+    </div>
+    <span id="sideNavOpen" style="font-size:30px;cursor:pointer">&#9776; Menu</span>
+
+    <header>
+        <h1>Sudoku!</h1>
+    </header>
+    <span class="buttonBox">
+        <button type="button" class="button" id="newGameButton">New Game</button>
+        <button type="button" class="button" id="showAnswerButton">Show Answer</button>
+        <button type="button" class="button" id="hintsButton">Turn off Hints</button>
+        <button type="button" class="button" id="clearButton">Clear</button>
+    </span>
+    
+    <div class="sudokuInputBoard">
+            <div class="inputCells">
+    
+            </div>
+    </div>
+
+    <div class="sudokuContainer">
+        <div class="sudokuCells"></div>
+    </div>
+
+    <script src="js/sudoku!-js/cell.js"></script>
+    <script src="js/sudoku!-js/cursor.js"></script>
+    <script src="js/sudoku!-js/board.js"></script>
+    <script src="js/sudoku!-js/sudoku.js"></script>
+    <script src="js/sudoku!-js/main.js"></script>
+
+    <footer>
+        <span>&copy;Junhao Ren &copy;2019</span>
+    </footer>
+
+</body>
+
+</html>

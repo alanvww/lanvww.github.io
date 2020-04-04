@@ -1,0 +1,326 @@
+* {
+    font-family: 'Lilita One', cursive;
+}
+
+body {
+    margin: 0;
+    height: 100%;
+
+}
+
+header h1 {
+    margin: 0;
+    color: #333;
+    text-align: center;
+    font-size: 5em;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.buttonBox {
+    display: flex;
+    justify-content: center;
+    margin: 1%;
+}
+
+.button {
+    background-color: lightblue;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.5vmax;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s;
+    /* Safari */
+    transition-duration: 0.4s;
+}
+
+.button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+footer {
+    display: relative;
+    position: relative;
+    bottom: 0px;
+    padding: 32px 16px;
+    color: rgb(255, 255, 255);
+    background-color: lightblue;
+}
+
+.sudokuContainer {
+    position: relative;
+    margin-left: 50%;
+    margin-right: 50%;
+    transform: translateX(-50%);
+    width: 900px;
+    max-width: 66vw;
+    margin-top: 6vh;
+    margin-bottom: 6vh;
+
+}
+
+.sudokuCells {
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+}
+
+.sudokuCells>.cell {
+    position: relative;
+    width: calc((100% - 27px) / 9);
+    border: 1px solid black;
+    transition: background-color .1s;
+}
+
+.sudokuCells>.cell:before {
+    content: "";
+    display: block;
+    padding-top: 100%;
+}
+
+.sudokuCells>.cell:nth-child(3n):not(:nth-child(9n)) {
+    border-right: 3px solid black;
+}
+
+.sudokuCells>.cell:nth-child(3n + 1):not(:nth-child(9n + 1)) {
+    border-left: 3px solid black;
+}
+
+.sudokuCells>.cell:nth-child(n + 19):nth-child(-n + 27),
+.sudokuCells>.cell:nth-child(n + 46):nth-child(-n + 54) {
+    border-bottom: 3px solid black;
+}
+
+.sudokuCells>.cell:nth-child(n + 28):nth-child(-n + 36),
+.sudokuCells>.cell:nth-child(n + 55):nth-child(-n + 63) {
+    border-top: 3px solid black;
+}
+
+.sudokuCells>.cell>h1 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    font-size: 3vmax;
+    font-weight: 100;
+    z-index: 2;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+.sudokuCells>.cell.is-fixed {
+    background-color: #ddd;
+}
+
+.sudukuCells>.cell.has-mistake>h1 {
+    color: #fff;
+}
+
+.sudokuCells>.cell.has-mistake:after {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(253, 75, 75);
+    border-radius: 100%;
+    z-index: 1;
+}
+
+.sudokuCells>.cell.active {
+    background-color: Lightblue;
+}
+
+.sudokuCells>.cell.active>h1 {
+    color: #fff;
+}
+
+.sudokuInputBoard {
+    position: relative;
+    margin-left: 50%;
+    margin-right: 50%;
+    transform: translateX(-50%);
+    width: 700px;
+    max-width: 30vw;
+}
+
+.inputCells {
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+}
+
+.inputCells>.input-cell {
+    position: relative;
+    background: Lightblue;
+    width: calc((100% - 27px) / 9);
+    transition: background-color .1s;
+
+}
+
+.inputCells>.input-cell:before {
+    content: "";
+    display: block;
+    padding-top: 100%;
+}
+
+.inputCells>.input-cell>h1 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    font-size: 2vmax;
+    color: #fff;
+    z-index: 2;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+.navinpage {
+    list-style-type: none;
+    margin: auto;
+    padding: 0;
+    width: 15%;
+    background-color: #ffffff;
+    position: fixed;
+    overflow: auto;
+}
+
+.navinpage li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+    margin: auto;
+}
+
+.navinpage li a:hover {
+    background-color: lightblue;
+    color: white;
+}
+
+.Content {
+    margin-left: 15%;
+    margin-right: 20%;
+    padding: auto;
+    height: auto;
+    font-size: 1vmax;
+}
+
+.highlight {
+    border: 1px solid rgb(235, 235, 235);
+    background-color: rgb(235, 235, 235);
+
+}
+
+@media screen and (max-height: 900px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+
+    .buttonBox {
+        max-width: 100%;
+    }
+
+    .button {
+        max-width: 100%;
+        padding: 12px 20px;
+        margin: 4px 2px;
+    }
+
+    footer {
+        padding: 20px 5px;
+        text-align: center;
+    }
+
+    .sudokuInputBoard {
+        max-width: 100%;
+    }
+
+    .inputCells {
+        display: flex;
+        flex-direction: row;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+
+    .sudokuContainer {
+        margin-top: 4vh;
+        max-width: 100%;
+    }
+
+    .navinpage,
+    .navinpage li a {
+        display: none;
+        padding: 0;
+        margin: 0;
+        float: none;
+    }
+
+    .Content {
+        margin: 5%;
+        margin-bottom: 20%;
+        padding: auto;
+        height: auto;
+        font-size: 2vmax;
+    }
+
+    footer span {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+}

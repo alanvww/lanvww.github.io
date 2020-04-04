@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Junhao Ren's Audio Visualizer</title>
+    <link rel="icon" type="image/png" href="src/favicon/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="src/favicon/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="src/favicon/favicon-48x48.png" sizes="48x48">
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <link href="css/audiovisualizer-css/default-styles.css" type="text/css" rel="stylesheet" />
+    <script src="js/audiovisualizer-js/loader.js" type="module"></script>
+</head>
+
+<body>
+    <main>
+        <h1> Junhao Ren's Audio Visualizer</h1>
+        <canvas></canvas>
+        <img src="src/media/img/smile-album.png" alt="">
+
+        <div id="controls">
+            <div>
+                <button id="playButton" data-playing="no"></button>
+                <button id="fsButton">Full Screen</button>
+            </div>
+
+            <div>
+                <label>Track:
+                    <select id="trackSelect">
+                        <option value="src/media/music/Meishi Smile Remix.mp3" selected>Meishi Smile - ANAMANAGUCHI
+                            Remix</option>
+                        <option value="src/media/music/Merry Christmas Mr. Lawrence.mp3">Merry Christmas Mr. Lawrence
+                        </option>
+                        <option value="src/media/music/Ananamaguchi-EndlessFantasy(LazerdiskRemix).mp3">EndlessFantasy -
+                            ANAMANAGUCHI Remix</option>
+                    </select>
+                </label>
+                <span id="current-time">00:00</span>
+                <progress id="indicator" value=0></progress>
+                <span id="duration">00:00</span>
+            </div>
+
+            <div>
+                <label for="volumeSlider">Volume:</label>
+                <input type="range" id="volumeSlider" min="0" max="1" value="0.5" step="0.01">
+                <span id="volumeLabel">???</span>
+            </div>
+
+            <div>
+                <label for="noiseSlider">Noise: </label>
+                <input type="range" id="noiseSlider" min="0" max="0.8" value="0" step="0.01">
+                <span id="noiseLabel">0</span>
+            </div>
+
+            <div>
+                <label for="distortionSlider">Distortion Amount: </label>
+                <input type="range" id="distortionSlider" min="0" max="100" value="20" step="1">
+                <span id="distortionLabel">20</span>
+            </div>
+
+            <div>
+                Display:
+                <br>
+                <span><input type="checkbox" name="display" id="gradientCB" checked><label for="gradientCB">Show
+                        Gradient</label></span>
+                <span><input type="checkbox" name="display" id="invertCB"><label for="invertCB">Show
+                        Invert</label></span>
+                <span><input type="checkbox" name="display" id="embossCB"><label for="embossCB">Show
+                        Emboss</label></span>
+            </div>
+
+            <div>
+                Sound Effect:
+                <br>
+                <input type="radio" id="soundEffect1" name="soundEffect" checked>
+                <label for="soundEffect1">Normal</label><br>
+                <input type="radio" id="soundEffect2" name="soundEffect">
+                <label for="soundEffect2">Distortion</label><br>
+            </div>
+
+            <div>
+                Data Source:
+                <br>
+                <input type="radio" id="frequency" name="dataSource" checked>
+                <label for="frequency">Frequency</label><br>
+                <input type="radio" id="waveform" name="dataSource">
+                <label for="waveform">Waveform</label><br>
+            </div>
+
+            <div>
+                Visualizer:
+                <br>
+                <span><input type="checkbox" name="waveform" id="linesCB"><label for="linesCB">Show Lines</label></span>
+                <span><input type="checkbox" name="waveform" id="curvesCB"><label for="curvesCB">Show
+                        Curves</label></span>
+                <span><input type="checkbox" name="frequency" id="barsCB" checked><label for="barsCB">Show
+                        Bars</label></span>
+                <span><input type="checkbox" name="frequency" id="circlesCB"><label for="circlesCB">Show Bouncing
+                        Circles</label></span>
+                <span><input type="checkbox" name="frequency" id="triangleCB" checked><label for="triangleCB">Show
+                        Triangles</label></span>
+            </div>
+        </div>
+
+    </main>
+</body>
+
+</html>

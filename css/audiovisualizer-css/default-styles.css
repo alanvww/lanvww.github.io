@@ -1,0 +1,54 @@
+body {
+  background: #000000;
+  font-family: 'Raleway', sans-serif;
+  margin: 0;
+  color: rgb(255, 255, 255);
+}
+
+h1{
+  text-align: center;
+  font-size: 1vmax;
+}
+
+canvas {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+img {
+  float: left;
+  max-height: 425px;
+  max-width: 425px;
+  padding-right: 10px;
+}
+
+#controls {
+  padding: 10px;
+}
+
+#volumeLabel {
+  margin-left: 1rem;
+}
+
+#controls>div {
+  margin-bottom: 0.8rem;
+}
+
+#playButton {
+  font-size: 1.2rem;
+  width: 6rem;
+}
+
+button[data-playing="yes"]:after {
+  content: "Pause";
+}
+
+button[data-playing="no"]:after {
+  content: "Play";
+}
+
+#fsButton {
+  font-size: 1.2rem;
+  width: 8rem;
+}

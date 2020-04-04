@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="src/favicon/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="src/favicon/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="src/favicon/favicon-48x48.png" sizes="48x48">
+    <title>Sudoku!</title>
+    <link rel="stylesheet" href="css/sudoku!-css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lilita+One&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" id="closebtn">&times;</a>
+        <a href="sudoku!.html">Game On!</a>
+        <a href="sudoku!-document.html">Document</a>
+        <a href="index.html">About me</a>
+    </div>
+    <span id="sideNavOpen" style="font-size:30px;cursor:pointer">&#9776; Menu</span>
+
+    <header>
+        <h1>Sudoku!</h1>
+    </header>
+
+    <ul class="navinpage">
+        <li><a href="#section1">What is Sudoku?</a></li>
+        <li><a href="#section2">How to Play</a></li>
+        <li><a href="#section3">UI Control</a></li>
+        <li><a href="#section4">Reference</a></li>
+    </ul>
+
+    <div class="Content">
+        <main>
+            <h2 id="section1"><span class="highlight">What is Sudoku?</span></h2>
+            <p>According to Wikipedia:</p>
+            <p><b>Sudoku</b> is a
+                logic-based, combinatorial number-placement puzzle. The objective is to fill a 9×9 grid with
+                digits so that each column, each row, and each of the nine 3×3 subgrids that compose the grid (also
+                called "boxes", "blocks", or "regions") contain all of the digits from 1 to 9. The puzzle setter
+                provides a partially completed grid, which for a well-posed puzzle has a single solution.</p>
+            <p>Completed games are always an example of a Latin square which include an additional constraint on the
+                contents of individual regions. For example, the same single integer may not appear twice in the same
+                row, column, or any of the nine 3×3 subregions of the 9×9 playing board.</p>
+
+            <h2 id="section2"><span class="highlight">How to Play</span></h2>
+            <p>As said above, the player need to complete the game by input number and every row, column and 3×3 block
+                have unique 1-9.</p>
+
+            <h2 id="section3"><span class="highlight">UI Control</span></h2>
+            <ul>
+                <li>Use Arrow Key or pointer to choose the single cell.</li>
+                <li>Input number by keyboard or the input pad shown on screen.</li>
+                <li>Double Click to clear the block.</li>
+            </ul>
+
+            <h2 id="section4"><span class="highlight">Reference</span></h2>
+            <ol>
+                <li>Sudoku by Wikipedia - <a href="https://en.wikipedia.org/wiki/Sudoku">Link</a>
+                </li>
+                <li>Sudoku Generator Algorithm
+                    - <a href="https://www.101computing.net/sudoku-generator-algorithm/">Link</a>
+                </li>
+                <li>Coming Back to Old Problems: How I Finally Wrote a Sudoku Solving Algorithm - <a
+                        href="https://dev.to/aspittel/how-i-finally-wrote-a-sudoku-solver-177g">Link</a>
+                </li>
+                <li>Sudoku-Generator - vaithak <a href="https://github.com/vaithak/Sudoku-Generator">Link</a></li>
+
+            </ol>
+
+
+        </main>
+    </div>
+
+    <script src="js/sudoku!-js/document.js"></script>
+
+    <footer>
+        <span>&copy;Junhao Ren &copy;2019</span>
+    </footer>
+
+</body>
+
+
+</html>

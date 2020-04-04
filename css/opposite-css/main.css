@@ -1,0 +1,14 @@
+body{
+    margin: 0;
+    background-color: black;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav{
+    font-size: 1em;
+    margin-left: 20px;
+}
+
+nav a{
+    color: honeydew;
+}
