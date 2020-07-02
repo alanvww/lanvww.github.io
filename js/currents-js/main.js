@@ -1,6 +1,6 @@
 const CURRENTS_API = 'https://api.currentsapi.services/v1/';
 
-const API_KEY = '&apiKey=dWcAmAOCfq2koCUdNCC_0zZtEoPmzRG4NYAdR_9qO7IshKjf';
+const API_KEY = '&apiKey=A7Vxcq9bqmEuxh3dmKyoAXrJ_jmY2p1XRvtWdp4nAJtS5wsc';
 
 let categoryWord;
 let language = "en";
