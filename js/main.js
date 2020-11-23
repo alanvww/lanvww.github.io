@@ -37,7 +37,7 @@ function init() {
         title.innerText = titleRandom();
     }, 2000);
     title.addEventListener("mousemove", function () {
-        title.innerText = "Junhao Ren";
+        title.innerText = "Alan Ren";
         clearInterval(titleChange);
     });
     title.addEventListener("mouseout", function () {
@@ -46,9 +46,13 @@ function init() {
         }, 4000);
     })
 
+    const copyright = `Made by <a href="mailto:alan.ren@lan.codes">@Junhao Ren</a> &copy;` +
+        new Date().getFullYear();
+    document.getElementById('copyright').innerHTML = copyright;
 
 
-    
+
+
 }
 
 function titleRandom() {
@@ -76,9 +80,7 @@ function titleRandom() {
 
 
         case 5:
-            return " Junhao Ren"
+            return " Alan Ren"
             break;
     }
 }
-
-
