@@ -58,7 +58,7 @@ h1 mark {
 }
 
 .marker {
-  background-image: url('./images/point.svg');
+  background-image: url('./src/img/point.svg');
   background-size: auto;
   background-position: center;
   background-repeat: no-repeat;

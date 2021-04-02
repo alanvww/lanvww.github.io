@@ -46,7 +46,7 @@ function loadSearch(obj) {
         if (result.image != "None") {
             line = `<div class='result'><img src="${result.image}"><h3><a target='_blank' href='${result.url}'>${result.title}</a></h3>`;
         } else {
-            line = `<div class='result'><img src="./images/default.png"><h3><a target='_blank' href='${result.url}'>${result.title}</a></h3>`;
+            line = `<div class='result'><img src="./src/img/default.png"><h3><a target='_blank' href='${result.url}'>${result.title}</a></h3>`;
         }
         line += `<address>${result.author}</address></div>`;
         document.querySelector("#content").innerHTML += line;
@@ -71,7 +71,7 @@ function loadNews(obj) {
         if (result.image != "None") {
             line = `<div class='result'><img src="${result.image}"><h3><a target='_blank' href='${result.url}'>${result.title}</a></h3>`;
         } else {
-            line = `<div class='result'><img src="./images/default.png"><h3><a target='_blank' href='${result.url}'>${result.title}</a></h3>`;
+            line = `<div class='result'><img src="./src/img/default.png"><h3><a target='_blank' href='${result.url}'>${result.title}</a></h3>`;
         }
         line += `<address>${result.author}</address></div>`;
         document.querySelector("#content").innerHTML += line;
