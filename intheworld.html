@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8' />
+    <title>In The World - By Junhao Ren</title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.css' rel='stylesheet' />
+    <link rel="stylesheet" href="./css/intheworld-css/default-styles.css">
+    <script src="./js/intheworld-js/loader.js" type="module"></script>
+</head>
+
+<body>
+    <h1><mark>I</mark>n <mark>T</mark>he <mark>W</mark>orld</h1>
+    <div id='map'></div>
+
+    <div id="searchBox">
+        <input id="searchterm" type="text" size="20" maxlength="20" autofocus placeholder="keywords" />
+        <button type="button" id="search">search</button>
+    </div>
+    <div class="widgets">
+        <span id="hints">News Categories <select id="category">
+                <option value='none'>None</option>
+            </select></span>
+
+        <button type="button" id="loadCategory">Go</button>
+        <button type="button" id="clear">Clear</button>
+    </div>
+
+    <div id="status"></div>
+    <div id="content">
+
+    </div>
+</body>
+
+</html>
