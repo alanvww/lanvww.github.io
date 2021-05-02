@@ -78,6 +78,7 @@ header h1 {
 footer {
     display: relative;
     position: relative;
+    text-align: center;
     bottom: 0px;
     padding: 32px 16px;
     color: rgb(255, 255, 255);
